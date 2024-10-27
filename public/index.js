@@ -41,10 +41,23 @@ document.addEventListener('DOMContentLoaded', () => {
         event.preventDefault(); // ป้องกันการรีเฟรชหน้าหลังจากกด submit
 
         // ดึงค่าจาก input field
-        const id = document.getElementById('id').value;
-        const section_id = document.getElementById('sectionID').value;
+        const id1 = document.getElementById('id').value;
+        const section_id1 = document.getElementById('sectionID').value;
         const student_id = document.getElementById('studentID').value;
         const date = document.getElementById('date').value;
+
+        const id = await pool.query(`
+            SELECT id
+            FROM student 
+            WHERE id = $1
+        `, [id1]);
+        
+
+        const section_id =await pool.query(`
+            SELECT section_id 
+            FROM student 
+            WHERE section_id = $1
+        `, [section_id1]);
 
         try {
             const response = await fetch('/submit-checkin', {

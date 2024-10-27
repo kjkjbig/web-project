@@ -1,0 +1,12 @@
+INSERT INTO student(id, prefix_id, first_name, last_name, date_of_birth, sex, curriculum_id, previous_school, address, telephone, email, line_id, status)
+VALUES 
+('001', '2', 'siripong', 'chaimanee', '2002-05-14', '1', '2', 'assumption college', '100 ถนนสีลม', '0812345678', 'siripong.c@gmail.com', 'pong123', '1'),
+('002', '1', 'waranya', 'techarat', '2004-11-23', '2', '1', 'satit patumwan', '55/7 ถนนพญาไท', '0923456789', 'waranya.t@gmail.com', 'waranya_88', '1'),
+('003', '3', 'pongsakorn', 'inthara', '2003-03-19', '1', '1', 'suankularb school', '22 ถนนพระราม 4', '0834567890', 'pongsakorn.i@gmail.com', 'pongsakorn4u', '1'),
+('004', '1', 'benjamas', 'wongnuch', '2003-12-30', '2', '3', 'triam udom', '47/15 หมู่ 2 ถนนสุขสวัสดิ์', '0845678901', 'benjamas.w@gmail.com', 'benjamascool', '1'),
+('005', '2', 'jirawat', 'srithong', '2004-07-18', '1', '2', 'ratchasuda school', '12/99 ถนนสาทร', '0856789012', 'jirawat.s@gmail.com', 'jirawat_mvp', '1'),
+('006', '1', 'kanokwan', 'pradit', '2002-10-09', '2', '1', 'benjamarachutit', '8 ซอยจรัญสนิทวงศ์ 94', '0867890123', 'kanokwan.p@gmail.com', 'kanokwan_pz', '1'),
+('007', '2', 'anurak', 'somboon', '2004-01-05', '1', '2', 'yothinburana school', '123 ถนนรามอินทรา', '0878901234', 'anurak.s@gmail.com', 'anurak_smart', '1'),
+('008', '3', 'natcha', 'khongsap', '2003-08-16', '2', '3', 'prathumthani school', '45 หมู่บ้านสวนสวย', '0889012345', 'natcha.k@gmail.com', 'natcha_love', '1'),
+('009', '1', 'kittisak', 'kamon', '2004-02-25', '1', '1', 'rajabhat university', '67 ถนนรามคำแหง', '0890123456', 'kittisak.k@gmail.com', 'kittisak_max', '1'),
+('010', '2', 'suwanna', 'tanthong', '2003-04-14', '2', '2', 'chiangmai university', '78/2 หมู่บ้านเชียงใหม่', '0801234567', 'suwanna.t@gmail.com', 'suwanna_star', '1');
