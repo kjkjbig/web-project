@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+</head>
+<body class="bg-light">
+
+    <div class="container mt-5">
+        <h1 class="text-center text-success mb-4">Profile</h1>
+
+        <!-- แสดงข้อมูลนักเรียนในตาราง -->
+        <div class="card">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <!-- รูปโปรไฟล์ -->
+                        <img 
+                            src="/images/pok.png" 
+                            alt="Profile Picture" 
+                            class="img-fluid rounded-circle mb-3"
+                            style="max-width: 150px;"
+                        >
+                    </div>
+                    <div class="col-md-8">
+                        <!-- รายละเอียดนักเรียน -->
+                        <table class="table">
+                            <tbody>
+                                <tr><th>Prefix:</th><td><%= student.prefix %></td></tr>
+                                <tr><th>First Name:</th><td><%= student.first_name %></td></tr>
+                                <tr><th>Last Name:</th><td><%= student.last_name %></td></tr>
+                                <tr><th>Date of Birth:</th><td><%= student.date_of_birth %></td></tr>
+                                <tr><th>Sex:</th>
+                                    <td>
+                                        <% if (student.sex == 1) { %>
+                                            Male
+                                        <% } else if (student.sex == 2) { %>
+                                            Female
+                                        <% } else { %>
+                                            Not Specified
+                                        <% } %>
+                                    </td>
+                                </tr>
+                                <tr><th>Curriculum Name (TH):</th><td><%= student.curr_name_th %></td></tr>
+                                <tr><th>Curriculum Name (EN):</th><td><%= student.curr_name_en %></td></tr>
+                                <tr><th>Short Name (TH):</th><td><%= student.short_name_th %></td></tr>
+                                <tr><th>Short Name (EN):</th><td><%= student.short_name_en %></td></tr>
+                                <tr><th>Previous School:</th><td><%= student.previous_school %></td></tr>
+                                <tr><th>Address:</th><td><%= student.address %></td></tr>
+                                <tr><th>Telephone:</th><td><%= student.telephone %></td></tr>
+                                <tr><th>Email:</th><td><%= student.email %></td></tr>
+                                <tr><th>Line ID:</th><td><%= student.line_id %></td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ปุ่ม Logout -->
+        <a href="/logout" class="btn btn-danger btn-block mt-3">Logout</a>
+        <p></p>
+        <a href="/checkin" class="btn btn-success btn-block mt-3">Check in</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script 
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    ></script>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    ></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    ></script>
+</body>
+</html>
